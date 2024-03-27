@@ -18,8 +18,8 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 
-# Inherit from x1slte device
-$(call inherit-product, device/samsung/x1slte/device.mk)
+# Inherit from x1s device
+$(call inherit-product, device/samsung/x1s/device.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common PixelExperience stuff
@@ -32,21 +32,21 @@ TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_SUPPORTS_QUICK_TAP := true
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := x1slte
-PRODUCT_NAME := aosp_x1slte
+PRODUCT_DEVICE := x1s
+PRODUCT_NAME := aosp_x1s
 PRODUCT_BRAND := samsung
-PRODUCT_MODEL := SM-G980F
+PRODUCT_MODEL := SM-G981B
 PRODUCT_MANUFACTURER := samsung
 
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
 
 # Use the latest approved GMS identifiers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=x1sxx \
-    PRIVATE_BUILD_DESC="x1sltexx-user 11 RP1A.200720.012 G980FXXSJHXC1 release-keys"
+    PRODUCT_NAME=x1sxxx \
+    PRIVATE_BUILD_DESC="x1sxxx-user 11 RP1A.200720.012 G981BXXSJHXC1 release-keys"
 
-BUILD_FINGERPRINT := samsung/x1sxx/x1s:11/RP1A.200720.012/G980FXXSJHXC1:user/release-keys
+BUILD_FINGERPRINT := samsung/x1sxxx/x1s:11/RP1A.200720.012/G981BXXSJHXC1:user/release-keys
 
 # Define PDA property for camera
 PRODUCT_SYSTEM_PROPERTIES += \
-    ro.build.PDA=G980FXXSJHXC1
+    ro.build.PDA=G981BXXSJHXC1

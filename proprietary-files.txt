@@ -1,4 +1,4 @@
-# All unpinned blobs are from G980FXXSIHWKD
+# All unpinned blobs are from G981BXXSADUH5
 # Vendor security patch level 2023-12-01
 
 # Audio
